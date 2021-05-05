@@ -4,7 +4,6 @@ describe('Amazon Laptop Search',()=>{
         cy.visit('https://www.amazon.com/')
         cy.title().should('eq','Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more')
     });
-
     it('Should enter laptop into search field',()=>{
         cy.get('#twotabsearchtextbox').type('laptop')
     })
